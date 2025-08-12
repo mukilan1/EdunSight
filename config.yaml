@@ -1,0 +1,60 @@
+# Project Configuration
+project:
+  name: "EdunSight"
+  version: "1.0.0"
+  description: "Student Performance Prediction ML Pipeline"
+
+# Data Configuration
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  features_dir: "data/features"
+
+  # Dataset URLs
+  oulad_url: "https://analyse.kmi.open.ac.uk/open-dataset/download"
+  uci_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip"
+
+  # Feature engineering
+  max_features: 50
+  chunk_size: 10000
+
+# Model Configuration
+model:
+  # Model artifacts directory
+  artifacts_dir: "models"
+
+  # LightGBM parameters
+  lgb_params:
+    n_estimators: 200
+    max_depth: 6
+    num_leaves: 31
+    learning_rate: 0.1
+    feature_fraction: 0.8
+    bagging_fraction: 0.8
+    bagging_freq: 5
+    random_state: 42
+    n_jobs: -1
+
+  # Model evaluation
+  test_size: 0.2
+  cv_folds: 5
+  random_state: 42
+
+# Streamlit App Configuration
+app:
+  title: "EdunSight - Student Performance Predictor"
+  page_icon: "📚"
+  layout: "wide"
+  sidebar_state: "expanded"
+
+# Performance Settings
+performance:
+  enable_onnx: true
+  cache_size: 1000
+  batch_size: 32
+
+# Monitoring
+monitoring:
+  log_predictions: true
+  drift_threshold: 0.1
+  retrain_threshold: 0.05

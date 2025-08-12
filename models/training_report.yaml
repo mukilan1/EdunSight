@@ -1,0 +1,178 @@
+best_model_details: {}
+model_comparison:
+  lightgbm:
+    accuracy: 0.995
+    auc_roc: 1.0
+    f1_score: 0.9925062656641603
+    inference_time_ms: 4.00853157043457
+    model_size_mb: 4.57763671875e-05
+    precision: 0.9900249999999999
+    recall: 0.995
+training_history:
+- hyperparameter_tuning: false
+  metrics: !!python/object:src.models.data_models.ModelMetrics
+    accuracy: 0.995
+    auc_roc: 1.0
+    confusion_matrix:
+    - - 0
+      - 1
+    - - 0
+      - 199
+    f1_score: 0.9925062656641603
+    feature_importance:
+      age: !!python/object/apply:numpy.core.multiarray.scalar
+      - &id001 !!python/object/apply:numpy.dtype
+        args:
+        - i4
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - !!binary |
+        wwAAAA==
+      age_band_35-55: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        FAAAAA==
+      age_band_55<=: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      assessment_1: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        4AAAAA==
+      assessment_2: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        PQAAAA==
+      assessment_3: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        oQAAAA==
+      assessment_consistency: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        fQAAAA==
+      attendance_rate: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        TQAAAA==
+      avg_assessment_score: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        7gAAAA==
+      clicks_per_day: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        UAAAAA==
+      course_id_BBB: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AQAAAA==
+      course_id_CCC: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      course_id_DDD: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      course_id_EEE: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      course_id_FFF: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      course_id_GGG: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        iQAAAA==
+      days_since_last_access: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        TwAAAA==
+      disability: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        BwAAAA==
+      forum_posts: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        OwAAAA==
+      gender: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      high_delay_risk: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      highest_education_HE Qualification: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        BAAAAA==
+      highest_education_Lower Than A Level: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AgAAAA==
+      low_attendance_risk: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      previous_attempts: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        BQAAAA==
+      region_East: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AgAAAA==
+      region_North: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      region_South: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      region_West: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      student_id: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        AAAAAA==
+      submission_delays: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        VAAAAA==
+      time_spent_online: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        cQAAAA==
+      total_clicks: !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        4wAAAA==
+    inference_time: 11.670827865600586
+    model_size_mb: 4.57763671875e-05
+    precision: 0.9900249999999999
+    recall: 0.995
+    training_time: 1.828176736831665
+  model_type: lightgbm
+  timestamp: 1755006826.9679277
+training_summary:
+  best_model: null
+  models_trained: 1
+  training_time_total: 1.828176736831665
